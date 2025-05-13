@@ -1,0 +1,87 @@
+.tech-services-section {
+  background-color: #f8f9fa;
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.section-title .highlight {
+  color: #007bff;
+}
+
+.section-subtitle {
+  color: #6c757d;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.tech-service-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.tech-service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(0, 123, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.tech-service-card:hover .service-icon {
+  background-color: rgba(0, 123, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.service-icon svg {
+  color: #6365CF;
+  transition: all 0.3s ease;
+}
+
+.tech-service-card:hover .service-icon svg {
+  color: #4A9CD9;
+}
+
+.tech-service-card .card-title {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.tech-service-card .card-text {
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.custom-solution-card {
+  background-color: rgba(0, 123, 255, 0.03);
+  border: 2px dashed rgba(0, 123, 255, 0.3);
+}
+
+.custom-solution-card .service-icon {
+  background-color: rgba(0, 123, 255, 0.2);
+  margin: 0 auto 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .tech-service-card {
+    margin-bottom: 30px;
+  }
+}

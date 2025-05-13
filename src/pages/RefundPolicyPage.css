@@ -1,0 +1,104 @@
+.refund-policy-page {
+  color: #333;
+}
+
+.refund-hero {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.refund-section h2 {
+  color: #0056b3;
+  font-weight: 600;
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+
+.refund-list, .contact-list {
+  padding-left: 20px;
+}
+
+.refund-list li, .contact-list li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.refund-steps {
+  padding-left: 25px;
+  counter-reset: step-counter;
+}
+
+.refund-steps li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  position: relative;
+}
+
+.refund-steps li::before {
+  counter-increment: step-counter;
+  content: counter(step-counter);
+  position: absolute;
+  left: -25px;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  background-color: #0056b3;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact-list li {
+  padding-left: 30px;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.contact-list li:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: #0056b3;
+}
+
+.contact-list li:nth-child(1):before {
+  content: '\f0e0';  /* envelope icon */
+}
+
+.contact-list li:nth-child(2):before {
+  content: '\f095';  /* phone icon */
+}
+
+.contact-list li:nth-child(3):before {
+  content: '\f059';  /* question-circle icon */
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #e7f1ff;
+  color: #0056b3;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(0, 86, 179, 0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .refund-hero {
+    padding: 40px 0;
+  }
+  
+  .refund-section h2 {
+    font-size: 1.5rem;
+  }
+}

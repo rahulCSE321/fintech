@@ -1,0 +1,36 @@
+.terms-page {
+  color: #333;
+}
+
+.terms-hero {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.terms-section h2 {
+  color: #0056b3;
+  font-weight: 600;
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+
+.terms-list {
+  padding-left: 20px;
+}
+
+.terms-list li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .terms-hero {
+    padding: 40px 0;
+  }
+  
+  .terms-section h2 {
+    font-size: 1.5rem;
+  }
+}

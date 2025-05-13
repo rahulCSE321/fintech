@@ -1,0 +1,71 @@
+.contact-page {
+  color: #333;
+}
+
+.contact-hero {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+}
+
+.contact-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.success-icon {
+  font-size: 4rem;
+  color: #28a745;
+}
+
+.faq-item h4 {
+  color: #007bff;
+  margin-bottom: 10px;
+  font-weight: 600;
+  position: relative;
+  padding-left: 25px;
+}
+
+.faq-item h4:before {
+  content: "Q:";
+  position: absolute;
+  left: 0;
+  color: #007bff;
+}
+
+.faq-item p {
+  padding-left: 25px;
+  position: relative;
+}
+
+.faq-item p:before {
+  content: "A:";
+  position: absolute;
+  left: 0;
+  color: #6c757d;
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-hero {
+    padding: 50px 0;
+  }
+  
+  .faq-item h4,
+  .faq-item p {
+    padding-left: 20px;
+  }
+}
