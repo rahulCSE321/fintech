@@ -28,10 +28,10 @@ const PrivacyPolicyPage = () => {
                 <div className="policy-section mb-5">
                   <h2 className="mb-4">Introduction</h2>
                   <p>
-                    ByteCharge ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how your personal information is collected, used, and disclosed by ByteCharge.
+                    Hanu Tech ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how your personal information is collected, used, and disclosed by Hanu Tech.
                   </p>
                   <p>
-                    This Privacy Policy applies to our website, and its associated subdomains (collectively, our "Service") alongside our application, ByteCharge. By accessing or using our Service, you signify that you have read, understood, and agree to our collection, storage, use, and disclosure of your personal information as described in this Privacy Policy and our Terms of Service.
+                    This Privacy Policy applies to our website, and its associated subdomains (collectively, our "Service") alongside our application, Hanu Tech. By accessing or using our Service, you signify that you have read, understood, and agree to our collection, storage, use, and disclosure of your personal information as described in this Privacy Policy and our Terms of Service.
                   </p>
                 </div>
 
@@ -138,7 +138,7 @@ const PrivacyPolicyPage = () => {
                     If you have any questions about this Privacy Policy, please contact us:
                   </p>
                   <ul className="contact-list">
-                    <li>By email: privacy@bytecharge.com</li>
+                    <li>By email: privacy@hanutech.com</li>
                     <li>By phone: 1800-123-4567</li>
                     <li>By mail: 123 Payment Street, Financial District, New Delhi, 110001</li>
                   </ul>

@@ -1,50 +1,118 @@
 .service-card {
-  border-radius: 15px;
+  border-radius: var(--border-radius);
   border: none;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
-  padding: 10px;
+  background-color: var(--dark-card-bg);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+  padding: 25px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--border-radius);
+  padding: 1px;
+  background: var(--gradient-primary);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
 .service-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25), var(--neon-primary);
+  background-color: var(--dark-card-bg-hover);
+}
+
+.service-card:hover::before {
+  opacity: 1;
 }
 
 .icon-container {
-  width: 65px;
-  height: 65px;
-  border-radius: 15px;
-  background-color: #eef5ff;
-  color: #0063f7;
+  width: 70px;
+  height: 70px;
+  border-radius: var(--border-radius);
+  background: linear-gradient(135deg, rgba(99, 101, 207, 0.15) 0%, rgba(74, 156, 217, 0.15) 100%);
+  color: var(--primary-light);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.service-card:hover .icon-container {
+  background: var(--gradient-primary);
+  color: var(--text-on-dark);
+  transform: scale(1.05);
+  box-shadow: var(--neon-primary);
 }
 
 .service-card .card-title {
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   font-weight: 600;
-  color: #212529;
+  color: var(--text-on-dark);
+  margin-bottom: 15px;
+  transition: all 0.4s ease;
+  font-family: 'Outfit', sans-serif;
+}
+
+.service-card:hover .card-title {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .service-link {
-  color: #0063f7;
+  color: var(--primary-light);
   font-weight: 500;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
+  position: relative;
+  font-family: 'Space Grotesk', sans-serif;
+  padding: 8px 0;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+.service-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gradient-primary);
+  transition: width 0.4s ease;
 }
 
 .service-link:hover {
-  color: #004dc1;
+  color: var(--accent);
   transform: translateX(5px);
+  text-shadow: var(--neon-primary-soft);
+}
+
+.service-link:hover::after {
+  width: 100%;
 }
 
 .card-text {
   font-size: 0.95rem;
-  line-height: 1.6;
+  line-height: 1.7;
+  color: var(--text-on-dark-muted) !important;
+  margin-bottom: 25px;
+  font-weight: 300;
 }

@@ -126,7 +126,7 @@ const TechnicalSupportPage = () => {
         <Container>
           <Row>
             <Col lg={12}>
-              <h2 className="section-title">Why Choose ByteCharge</h2>
+              <h2 className="section-title">Why Choose Hanu Tech</h2>
               <p>
                 Our technical support expertise sets us apart from other service providers. Our support team is composed of certified professionals with diverse technical backgrounds, ensuring that we have the right expertise to address any issue that may arise.
               </p>
@@ -162,7 +162,7 @@ const TechnicalSupportPage = () => {
           <div className="cta-content">
             <h2>Ready to Enhance Your Technical Support?</h2>
             <p>
-              Partner with ByteCharge for reliable technical support services that keep your systems running smoothly.
+              Partner with Hanu Tech for reliable technical support services that keep your systems running smoothly.
             </p>
             <Button 
               as={Link} 
@@ -173,7 +173,7 @@ const TechnicalSupportPage = () => {
               Get Started
             </Button>
             <p className="footer-note mt-4">
-              Founded in 2018, ByteCharge provides innovative technology solutions to help businesses thrive in today's digital landscape.
+              Founded in 2018, Hanu Tech provides innovative technology solutions to help businesses thrive in today's digital landscape.
             </p>
           </div>
         </Container>

@@ -35,7 +35,7 @@ const FeaturesSection = () => {
     <section className="features-section py-5">
       <Container>
         <div className="text-center mb-5">
-          <h2 className="section-title">Why Choose <span className="highlight">ByteCharge</span></h2>
+          <h2 className="section-title">Why Choose <span className="highlight">Hanu Tech</span></h2>
           <p className="section-subtitle">
             Experience the best-in-class digital payment platform
           </p>

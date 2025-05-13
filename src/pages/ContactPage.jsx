@@ -94,9 +94,9 @@ const ContactPage = () => {
                   </div>
                   <Card.Title>Email Us</Card.Title>
                   <Card.Text>
-                    Customer Support: support@bytecharge.com<br />
-                    Business Inquiries: business@bytecharge.com<br />
-                    Media: media@bytecharge.com
+                    Customer Support: support@hanutech.com<br />
+                    Business Inquiries: business@hanutech.com<br />
+                    Media: media@hanutech.com
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -220,7 +220,7 @@ const ContactPage = () => {
               <div className="faq-item mb-4">
                 <h4>How can I track my complaint status?</h4>
                 <p>
-                  You can track your complaint status by logging into your ByteCharge account, going to "Help & Support" section, 
+                  You can track your complaint status by logging into your Hanu Tech account, going to "Help & Support" section, 
                   and then selecting "My Complaints" to view the status.
                 </p>
               </div>

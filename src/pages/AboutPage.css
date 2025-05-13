@@ -1,70 +1,300 @@
 .about-page {
   overflow-x: hidden;
+  color: var(--text-on-dark);
 }
 
 .about-hero {
-  background-color: #f8f9fa;
-  padding: 80px 0;
+  background-color: var(--dark-bg);
+  padding: 90px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-hero::before {
+  content: '';
+  position: absolute;
+  top: -150px;
+  right: -150px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(99, 101, 207, 0.1) 0%, transparent 70%);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .about-hero h1 {
-  color: #333;
+  color: var(--text-on-dark);
+  margin-bottom: 25px;
 }
 
-.about-hero .highlight {
-  color: #0063f7;
+.gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  display: inline-block;
+  position: relative;
+  text-shadow: 0 0 10px rgba(99, 101, 207, 0.3);
 }
 
 .about-hero img {
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), var(--neon-primary-soft);
+  position: relative;
+  z-index: 1;
+}
+
+.about-hero .lead,
+.about-hero p {
+  color: var(--text-on-dark-muted);
+  line-height: 1.7;
+  font-weight: 300;
+  position: relative;
+  z-index: 1;
+}
+
+.about-hero .lead {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Our Mission and Vision */
+.our-mission {
+  background-color: var(--dark-bg-lighter);
+  padding: 80px 0;
+  position: relative;
+  color: var(--text-on-dark);
+  overflow: hidden;
+}
+
+.our-mission::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(99, 101, 207, 0.05) 0%, transparent 70%);
+  top: -100px;
+  right: -100px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.our-mission p {
+  color: var(--text-on-dark-muted);
+  font-weight: 300;
+}
+
+.mission-icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-light);
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(99, 101, 207, 0.15) 0%, rgba(74, 156, 217, 0.15) 100%);
+  transition: all 0.4s ease;
+}
+
+.modern-card:hover .mission-icon {
+  background: var(--gradient-primary);
+  color: var(--text-on-dark);
+  box-shadow: var(--neon-primary-soft);
+  transform: scale(1.05);
 }
 
 /* Values section */
 .value-card {
-  background-color: white;
-  padding: 30px 20px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  background-color: var(--dark-card-bg);
+  padding: 30px 25px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   height: 100%;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.value-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--border-radius);
+  padding: 1px;
+  background: var(--gradient-primary);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
 .value-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), var(--neon-primary-soft);
+  background-color: var(--dark-card-bg-hover);
+}
+
+.value-card:hover::before {
+  opacity: 1;
 }
 
 .value-icon {
   width: 70px;
   height: 70px;
-  background-color: #ebf4ff;
-  color: #0063f7;
+  background: linear-gradient(135deg, rgba(99, 101, 207, 0.15) 0%, rgba(74, 156, 217, 0.15) 100%);
+  color: var(--primary-light);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 28px;
   margin: 0 auto 20px;
+  transition: all 0.4s ease;
+}
+
+.value-card:hover .value-icon {
+  background: var(--gradient-primary);
+  color: var(--text-on-dark);
+  box-shadow: var(--neon-primary-soft);
 }
 
 .value-card h4 {
   margin-bottom: 15px;
   font-weight: 600;
+  color: var(--text-on-dark);
+  transition: all 0.3s ease;
+}
+
+.value-card:hover h4 {
+  color: var(--primary-light);
+}
+
+.value-card p {
+  color: var(--text-on-dark-muted);
+  font-weight: 300;
+}
+
+.modern-badge {
+  background: linear-gradient(135deg, rgba(99, 101, 207, 0.15) 0%, rgba(74, 156, 217, 0.15) 100%);
+  color: var(--primary-light);
+  padding: 8px 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 20px;
+  box-shadow: var(--neon-primary-soft);
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.modern-card:hover .modern-badge {
+  background: linear-gradient(135deg, rgba(99, 101, 207, 0.2) 0%, rgba(74, 156, 217, 0.2) 100%) !important;
+  color: var(--primary-light) !important;
+  padding: 8px 15px !important;
+  font-weight: 500 !important;
+  letter-spacing: 1px !important;
+  border-radius: 20px !important;
+  box-shadow: var(--neon-primary-soft);
+  border: none !important;
+  text-transform: uppercase;
+  font-size: 0.8rem !important;
+}
+
+/* Modern Card Style for Mission & Values */
+.modern-card {
+  border: none;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  background-color: var(--dark-card-bg);
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.modern-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--border-radius);
+  padding: 1px;
+  background: var(--gradient-primary);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.modern-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), var(--neon-primary-soft);
+  background-color: var(--dark-card-bg-hover);
+}
+
+.modern-card:hover::before {
+  opacity: 1;
 }
 
 /* Team section */
 .team-card {
   border: none;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+  background-color: var(--dark-card-bg);
+  position: relative;
+  z-index: 1;
+}
+
+/* Leadership card with white background */
+.leadership-card {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.leadership-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  border: 1px solid #000000;
+}
+
+.team-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--border-radius);
+  padding: 1px;
+  background: var(--gradient-primary);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
 }
 
 .team-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), var(--neon-primary-soft);
+  background-color: var(--dark-card-bg-hover);
+}
+
+.team-card:hover::before {
+  opacity: 1;
 }
 
 .team-img-container {
@@ -81,14 +311,118 @@
   transform: scale(1.1);
 }
 
+.team-card .section-title {
+  color: var(--text-on-dark);
+  margin-bottom: 15px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+}
+
+.section-title span {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  text-shadow: 0 0 8px rgba(99, 101, 207, 0.3);
+}
+
+.lead {
+  color: var(--text-on-dark-muted);
+  font-weight: 300;
+}
+
 .team-card .card-title {
   font-weight: 600;
+  color: var(--text-on-dark);
+}
+
+.team-card .card-text {
+  color: var(--text-on-dark-muted);
+  font-weight: 300;
+}
+
+.team-card .card-subtitle {
+  color: var(--primary-light);
+  font-weight: 500;
 }
 
 /* Timeline styles */
 .timeline {
   position: relative;
   padding: 20px 0;
+  color: var(--text-on-dark);
+}
+
+/* Why Choose Us section */
+.why-choose {
+  background-color: var(--dark-bg-lighter);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 80px 0;
+}
+
+.why-choose::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(99, 101, 207, 0.05) 0%, transparent 70%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.why-choose-point {
+  height: 100%;
+}
+
+.why-choose-point h4 {
+  color: var(--text-on-dark);
+  margin-bottom: 15px;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.why-choose-point:hover h4 {
+  color: var(--primary-light);
+  text-shadow: var(--neon-primary-soft);
+}
+
+.why-choose-point p {
+  color: var(--text-on-dark-muted);
+  font-weight: 300;
+  line-height: 1.7;
+  position: relative;
+  z-index: 1;
+}
+
+.why-choose-point-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: var(--primary-light);
+  background: linear-gradient(135deg, rgba(99, 101, 207, 0.15) 0%, rgba(74, 156, 217, 0.15) 100%);
+  transition: all 0.4s ease;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.why-choose-point:hover .why-choose-point-icon {
+  background: var(--gradient-primary);
+  color: var(--text-on-dark);
+  transform: scale(1.05);
+  box-shadow: var(--neon-primary-soft);
 }
 
 .timeline::before {
@@ -98,7 +432,7 @@
   bottom: 0;
   left: 20px;
   width: 2px;
-  background-color: #0063f7;
+  background: var(--gradient-primary);
 }
 
 .timeline-item {

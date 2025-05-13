@@ -17,14 +17,14 @@ const AboutPage = () => {
       name: 'Jane Smith',
       position: 'CTO',
       image: 'https://via.placeholder.com/150',
-      bio: 'Jane brings her wealth of knowledge in cybersecurity to ensure all transactions on ByteCharge are safe and secure.'
+      bio: 'Jane brings her wealth of knowledge in cybersecurity to ensure all transactions on Hanu Tech are safe and secure.'
     },
     {
       id: 3,
       name: 'David Brown',
       position: 'Head of Operations',
       image: 'https://via.placeholder.com/150',
-      bio: 'David oversees the day-to-day operations, ensuring a smooth experience for all ByteCharge users.'
+      bio: 'David oversees the day-to-day operations, ensuring a smooth experience for all Hanu Tech users.'
     },
     {
       id: 4,
@@ -43,24 +43,24 @@ const AboutPage = () => {
           <Row className="align-items-center">
             <Col lg={6} md={12} className="mb-4 mb-lg-0">
               <Badge className="modern-badge mb-3" bg="light" text="primary">About Us</Badge>
-              <h1 className="display-4 fw-bold mb-4">About <span className="gradient-text">ByteCharge</span></h1>
+              <h1 className="display-4 fw-bold mb-4">About <span className="gradient-text">Hanu Tech</span></h1>
               <p className="lead mb-4">
                 Empowering businesses through innovative technology solutions.              
               </p>
               <p className="mb-4">
-                ByteCharge was founded in 2018 in Bangalore, India, with a vision to empower businesses through innovative technology solutions. Since our inception, we have been dedicated to helping organizations leverage technology to achieve their business objectives.
+                Hanu Tech was founded in 2018 in Bangalore, India, with a vision to empower businesses through innovative technology solutions. Since our inception, we have been dedicated to helping organizations leverage technology to achieve their business objectives.
               </p>
               <p className="mb-4">
                 As a registered Indian company (CIN: U74999KA2018PTC116566), we take pride in our commitment to excellence, integrity, and client success. Our team of skilled professionals brings diverse expertise across multiple technology domains to deliver exceptional results.
               </p>
               <p className="mb-4">
-                Today, ByteCharge has established itself as a trusted technology partner for businesses across various industries, providing comprehensive services including IT Consulting, Business Process Outsourcing, Technical Support, Software Development, and IT Staffing.
+                Today, Hanu Tech has established itself as a trusted technology partner for businesses across various industries, providing comprehensive services including IT Consulting, Business Process Outsourcing, Technical Support, Software Development, and IT Staffing.
               </p>
             </Col>
             <Col lg={6} md={12}>
               <img 
                 src="https://via.placeholder.com/600x400" 
-                alt="About ByteCharge" 
+                alt="About Hanu Tech" 
                 className="img-fluid rounded shadow"
               />
             </Col>
@@ -150,20 +150,17 @@ const AboutPage = () => {
       </section>
 
       {/* Our Team */}
-      <section className="our-team py-5">
+      <section className="our-team py-5" style={{ backgroundColor: '#ffffff' }}>
         <Container>
-          <h2 className="text-center mb-5">Our Leadership Team</h2>
+          <h2 className="text-center mb-5" style={{ color: '#000000', fontWeight: 'bold' }}>Our Leadership Team</h2>
           <Row>
             {teamMembers.map(member => (
               <Col key={member.id} lg={3} md={6} className="mb-4">
-                <Card className="team-card h-100">
-                  <div className="team-img-container">
-                    <Card.Img variant="top" src={member.image} alt={member.name} className="team-img" />
-                  </div>
-                  <Card.Body>
-                    <Card.Title className="mb-1">{member.name}</Card.Title>
-                    <Card.Subtitle className="mb-3 text-muted">{member.position}</Card.Subtitle>
-                    <Card.Text>{member.bio}</Card.Text>
+                <Card className="team-card h-100 leadership-card">
+                  <Card.Body className="p-4">
+                    <Card.Title className="mb-2" style={{ color: '#000000', fontWeight: 'bold', fontSize: '1.3rem' }}>{member.name}</Card.Title>
+                    <Card.Subtitle className="mb-3" style={{ color: '#000000', fontWeight: '600' }}>{member.position}</Card.Subtitle>
+                    <Card.Text style={{ color: '#000000', fontWeight: '500' }}>{member.bio}</Card.Text>
                   </Card.Body>
                 </Card>
               </Col>
@@ -175,7 +172,7 @@ const AboutPage = () => {
       {/* Why Choose Us */}
       <section className="why-choose py-5 bg-light">
         <Container>
-          <h2 className="section-title text-center mb-5">Why Choose <span>ByteCharge</span></h2>
+          <h2 className="section-title text-center mb-5">Why Choose <span>Hanu Tech</span></h2>
           <Row className="g-4">
             <Col lg={4} md={6}>
               <div className="why-choose-point modern-card p-4">
@@ -242,7 +239,7 @@ const AboutPage = () => {
             <Col lg={6} md={12} className="order-lg-2 mb-4 mb-lg-0">
               <h2 className="section-title mb-4">Our <span>Journey</span></h2>
               <p className="mb-3">
-                ByteCharge was founded in 2018 with a vision to bridge the gap between technology and business needs. What started as a small team of dedicated professionals has now grown into a comprehensive technology service provider.
+                Hanu Tech was founded in 2018 with a vision to bridge the gap between technology and business needs. What started as a small team of dedicated professionals has now grown into a comprehensive technology service provider.
               </p>
               <p className="mb-3">
                 Our journey has been marked by continuous learning, adaptation, and growth. We've expanded our expertise across various technology domains to provide holistic solutions that address the diverse needs of our clients.
@@ -257,7 +254,7 @@ const AboutPage = () => {
                   <div className="timeline-dot"></div>
                   <div className="timeline-content">
                     <h4>2018</h4>
-                    <p>ByteCharge was founded in Bangalore, India</p>
+                    <p>Hanu Tech was founded in Bangalore, India</p>
                   </div>
                 </div>
                 <div className="timeline-item">
@@ -285,7 +282,7 @@ const AboutPage = () => {
                   <div className="timeline-dot"></div>
                   <div className="timeline-content">
                     <h4>2022</h4>
-                    <p>ByteCharge celebrates delivering 200+ successful projects</p>
+                    <p>Hanu Tech celebrates delivering 200+ successful projects</p>
                   </div>
                 </div>
               </div>

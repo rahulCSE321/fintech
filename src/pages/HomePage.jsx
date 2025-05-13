@@ -26,7 +26,7 @@ const HomePage = () => {
               <div className="cta-content">
                 <h2>Ready to simplify your finances?</h2>
                 <p>
-                  Join hundreds of businesses who trust ByteCharge for their technology needs.
+                  Join hundreds of businesses who trust Hanu Tech for their technology needs.
                   Get started in minutes with a simple registration process.
                 </p>
               </div>
@@ -46,7 +46,7 @@ const HomePage = () => {
         </Container>
       </section>
       
-      {/* ByteCharge Client Testimonials Section */}
+      {/* Hanu Tech Client Testimonials Section */}
       <section className="testimonials-section py-5">
         <Container>
           <div className="text-center mb-5">
@@ -63,7 +63,7 @@ const HomePage = () => {
                   ★★★★★
                 </div>
                 <p className="testimonial-text">
-                  "ByteCharge has transformed our IT infrastructure completely. Their technical expertise and dedication to our success were impressive!"
+                  "Hanu Tech has transformed our IT infrastructure completely. Their technical expertise and dedication to our success were impressive!"
                 </p>
                 <div className="testimonial-author">
                   <div className="avatar">RS</div>
@@ -81,7 +81,7 @@ const HomePage = () => {
                   ★★★★★
                 </div>
                 <p className="testimonial-text">
-                  "The software development team at ByteCharge delivered exactly what we needed. Their agile approach and transparent communication made the process smooth and effective."
+                  "The software development team at Hanu Tech delivered exactly what we needed. Their agile approach and transparent communication made the process smooth and effective."
                 </p>
                 <div className="testimonial-author">
                   <div className="avatar">PK</div>

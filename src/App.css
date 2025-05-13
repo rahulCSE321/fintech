@@ -1,5 +1,5 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -8,33 +8,107 @@
 }
 
 :root {
-  --primary: #5E60CE;
-  --primary-light: #6930C3;
-  --primary-dark: #5390D9;
-  --accent: #4EA8DE;
-  --accent-light: #56CFE1;
-  --dark: #2B2D42;
-  --gray-dark: #495057;
-  --gray: #6c757d;
-  --gray-light: #e9ecef;
-  --light: #f8f9fa;
-  --success: #48BF84;
-  --warning: #FFD166;
-  --danger: #EF476F;
+  /* Main color palette */
+  --primary: #6365CF;
+  --primary-dark: #4A47A3;
+  --primary-light: #7879F1;
+  --accent: #4A9CD9;
+  --accent-light: #64DFDF;
+  --accent-dark: #0693E3;
+  
+  /* Dark theme colors */
+  --dark-bg: #0F172A;
+  --dark-surface: #1E293B;
+  --dark-surface-light: #334155;
+  --dark-card: #1E293B;
+  
+  /* Text colors */
+  --text-on-dark: #F8FAFC;
+  --text-on-dark-muted: #94A3B8;
+  --text-on-light: #1E293B;
+  
+  /* Status colors */
+  --success: #10B981;
+  --warning: #F59E0B;
+  --danger: #EF4444;
+  
+  /* UI Elements */
   --border-radius: 12px;
   --border-radius-sm: 8px;
-  --border-radius-lg: 16px;
-  --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  --box-shadow-hover: 0 15px 35px rgba(0, 0, 0, 0.1);
+  --border-radius-lg: 20px;
+  --box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  --box-shadow-hover: 0 15px 35px rgba(0, 0, 0, 0.3);
+  --box-shadow-glow: 0 0 15px rgba(99, 101, 207, 0.5);
   --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  
+  /* Neon effects */
+  --neon-primary: 0 0 5px rgba(99, 101, 207, 0.5), 0 0 20px rgba(99, 101, 207, 0.3);
+  --neon-accent: 0 0 5px rgba(74, 156, 217, 0.5), 0 0 20px rgba(74, 156, 217, 0.3);
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+  --gradient-dark: linear-gradient(135deg, var(--dark-bg) 0%, var(--dark-surface) 100%);
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  color: var(--dark);
-  line-height: 1.7;
-  overflow-x: hidden;
-  background-color: var(--light);
+  font-family: 'Outfit', 'Space Grotesk', sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--text-on-dark);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Global text and card visibility for dark mode */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-on-dark) !important;
+}
+
+p, li, td, th, span:not(.gradient-text):not(.highlight), blockquote, label {
+  color: var(--text-on-dark-muted) !important;
+}
+
+.card, .card-body {
+  background-color: var(--dark-card-bg);
+  color: var(--text-on-dark);
+}
+
+.card:hover {
+  background-color: var(--dark-card-bg-hover);
+}
+
+.card p, .card-text, .card-body p, .card-subtitle {
+  color: var(--text-on-dark-muted) !important;
+}
+
+/* Fix for Why Choose sections across all pages */
+.section-title, .why-choose h2, .features-section h2, .our-values h2, .our-mission h2 {
+  color: var(--text-on-dark) !important;
+}
+
+.section-subtitle, .why-choose p, .features-section p, .our-values p, .our-mission p {
+  color: var(--text-on-dark-muted) !important;
+}
+
+/* Fix for all card titles */
+.card-title, .feature-title, .benefit-card h4, .why-choose-point h4, .value-card h4 {
+  color: var(--text-on-dark) !important;
+}
+
+/* Fix for all background colors */
+.bg-light {
+  background-color: var(--dark-bg-lighter) !important;
+}
+
+.text-muted {
+  color: var(--text-on-dark-muted) !important;
+}
+
+.gradient-text, .highlight {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  text-shadow: 0 0 10px rgba(99, 101, 207, 0.3);
 }
 
 .App {

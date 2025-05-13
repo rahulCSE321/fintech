@@ -126,7 +126,7 @@ const ITStaffingPage = () => {
         <Container>
           <Row>
             <Col lg={12}>
-              <h2 className="section-title">Why Choose ByteCharge</h2>
+              <h2 className="section-title">Why Choose Hanu Tech</h2>
               <p>
                 Our IT staffing expertise sets us apart from other service providers. We have built an extensive network of technology professionals across various specializations, allowing us to quickly identify and engage qualified candidates for your open positions.
               </p>
@@ -162,7 +162,7 @@ const ITStaffingPage = () => {
           <div className="cta-content">
             <h2>Ready to Build Your Dream Tech Team?</h2>
             <p>
-              Partner with ByteCharge for IT staffing services that connect you with the right technology talent.
+              Partner with Hanu Tech for IT staffing services that connect you with the right technology talent.
             </p>
             <Button 
               as={Link} 
@@ -173,7 +173,7 @@ const ITStaffingPage = () => {
               Get Started
             </Button>
             <p className="footer-note mt-4">
-              Founded in 2018, ByteCharge provides innovative technology solutions to help businesses thrive in today's digital landscape.
+              Founded in 2018, Hanu Tech provides innovative technology solutions to help businesses thrive in today's digital landscape.
             </p>
           </div>
         </Container>

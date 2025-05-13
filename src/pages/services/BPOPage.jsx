@@ -126,7 +126,7 @@ const BPOPage = () => {
         <Container>
           <Row>
             <Col lg={12}>
-              <h2 className="section-title">Why Choose ByteCharge</h2>
+              <h2 className="section-title">Why Choose Hanu Tech</h2>
               <p>
                 Our BPO expertise sets us apart from other service providers. We bring years of experience in managing diverse business processes across various industries, ensuring that our solutions are practical, efficient, and tailored to your specific business context.
               </p>
@@ -162,7 +162,7 @@ const BPOPage = () => {
           <div className="cta-content">
             <h2>Ready to Streamline Your Business Operations?</h2>
             <p>
-              Partner with ByteCharge for efficient BPO services that drive operational excellence and cost efficiency.
+              Partner with Hanu Tech for efficient BPO services that drive operational excellence and cost efficiency.
             </p>
             <Button 
               as={Link} 
@@ -173,7 +173,7 @@ const BPOPage = () => {
               Get Started
             </Button>
             <p className="footer-note mt-4">
-              Founded in 2018, ByteCharge provides innovative technology solutions to help businesses thrive in today's digital landscape.
+              Founded in 2018, Hanu Tech provides innovative technology solutions to help businesses thrive in today's digital landscape.
             </p>
           </div>
         </Container>

@@ -10,7 +10,7 @@ const Footer = () => {
       <Container>
         <Row className="mb-4">
           <Col md={4} className="mb-4 mb-md-0">
-            <h5 className="text-uppercase mb-4">Pay999</h5>
+            <h5 className="text-uppercase mb-4">Halo tech</h5>
             <p>
               Your one-stop solution for all payment needs. Recharge, pay bills,
               book flights, movie tickets, and more with ease and convenience.
@@ -81,7 +81,7 @@ const Footer = () => {
         <Row className="align-items-center">
           <Col md={8} lg={8}>
             <p className="small text-md-left">
-              © {new Date().getFullYear()} Copyright: <strong>Pay999</strong>. All rights reserved.
+              © {new Date().getFullYear()} Copyright: <strong>Halo Tech</strong>. All rights reserved.
             </p>
           </Col>
           <Col md={4} lg={4} className="ml-lg-0 text-md-right">

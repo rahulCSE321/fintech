@@ -28,7 +28,7 @@ const TermsPage = () => {
                 <div className="terms-section mb-5">
                   <h2 className="mb-4">Introduction</h2>
                   <p>
-                    These Terms and Conditions ("Terms") govern your use of the ByteCharge website and mobile application (collectively, the "Service") operated by ByteCharge ("we," "us," or "our").
+                    These Terms and Conditions ("Terms") govern your use of the Hanu Tech website and mobile application (collectively, the "Service") operated by Hanu Tech ("we," "us," or "our").
                   </p>
                   <p>
                     By accessing or using the Service, you agree to be bound by these Terms. If you disagree with any part of the terms, you may not access the Service.
@@ -51,7 +51,7 @@ const TermsPage = () => {
                 <div className="terms-section mb-5">
                   <h2 className="mb-4">Services</h2>
                   <p>
-                    ByteCharge provides various technology services, including but not limited to:
+                    Hanu Tech provides various technology services, including but not limited to:
                   </p>
                   <ul className="terms-list">
                     <li>Mobile recharges</li>
@@ -82,7 +82,7 @@ const TermsPage = () => {
                 <div className="terms-section mb-5">
                   <h2 className="mb-4">Intellectual Property</h2>
                   <p>
-                    The Service and its original content, features, and functionality are and will remain the exclusive property of ByteCharge and its licensors. The Service is protected by copyright, trademark, and other laws of both India and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of ByteCharge.
+                    The Service and its original content, features, and functionality are and will remain the exclusive property of Hanu Tech and its licensors. The Service is protected by copyright, trademark, and other laws of both India and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of Hanu Tech.
                   </p>
                 </div>
 
@@ -105,19 +105,19 @@ const TermsPage = () => {
                     <li>In any way that violates any applicable national or international law or regulation</li>
                     <li>For the purpose of exploiting, harming, or attempting to exploit or harm minors in any way</li>
                     <li>To transmit, or procure the sending of, any advertising or promotional material, including any "junk mail," "chain letter," "spam," or any other similar solicitation</li>
-                    <li>To impersonate or attempt to impersonate ByteCharge, a ByteCharge employee, another user, or any other person or entity</li>
+                    <li>To impersonate or attempt to impersonate Hanu Tech, a Hanu Tech employee, another user, or any other person or entity</li>
                     <li>In any way that infringes upon the rights of others, or in any way is illegal, threatening, fraudulent, or harmful</li>
-                    <li>To engage in any other conduct that restricts or inhibits anyone's use or enjoyment of the Service, or which, as determined by us, may harm ByteCharge or users of the Service or expose them to liability</li>
+                    <li>To engage in any other conduct that restricts or inhibits anyone's use or enjoyment of the Service, or which, as determined by us, may harm Hanu Tech or users of the Service or expose them to liability</li>
                   </ul>
                 </div>
 
                 <div className="terms-section mb-5">
                   <h2 className="mb-4">Limitation of Liability</h2>
                   <p>
-                    To the maximum extent permitted by applicable law, in no event shall ByteCharge, its affiliates, directors, employees, agents, or licensors be liable for any indirect, punitive, incidental, special, consequential, or exemplary damages, including without limitation, damages for loss of profits, goodwill, use, data, or other intangible losses, that result from the use of, or inability to use, the Service.
+                    To the maximum extent permitted by applicable law, in no event shall Hanu Tech, its affiliates, directors, employees, agents, or licensors be liable for any indirect, punitive, incidental, special, consequential, or exemplary damages, including without limitation, damages for loss of profits, goodwill, use, data, or other intangible losses, that result from the use of, or inability to use, the Service.
                   </p>
                   <p>
-                    To the maximum extent permitted by applicable law, ByteCharge assumes no liability or responsibility for any: (i) errors, mistakes, or inaccuracies of content; (ii) personal injury or property damage, of any nature whatsoever, resulting from your access to or use of our Service; (iii) any unauthorized access to or use of our secure servers and/or any and all personal information stored therein.
+                    To the maximum extent permitted by applicable law, Hanu Tech assumes no liability or responsibility for any: (i) errors, mistakes, or inaccuracies of content; (ii) personal injury or property damage, of any nature whatsoever, resulting from your access to or use of our Service; (iii) any unauthorized access to or use of our secure servers and/or any and all personal information stored therein.
                   </p>
                 </div>
 
@@ -127,7 +127,7 @@ const TermsPage = () => {
                     YOUR USE OF THE SERVICE IS AT YOUR SOLE RISK. THE SERVICE IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS. THE SERVICE IS PROVIDED WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, OR COURSE OF PERFORMANCE.
                   </p>
                   <p>
-                    ByteCharge, its subsidiaries, affiliates, and its licensors do not warrant that a) the Service will function uninterrupted, secure, or available at any particular time or location; b) any errors or defects will be corrected; c) the Service is free of viruses or other harmful components; or d) the results of using the Service will meet your requirements.
+                    Hanu Tech, its subsidiaries, affiliates, and its licensors do not warrant that a) the Service will function uninterrupted, secure, or available at any particular time or location; b) any errors or defects will be corrected; c) the Service is free of viruses or other harmful components; or d) the results of using the Service will meet your requirements.
                   </p>
                 </div>
 

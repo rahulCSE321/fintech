@@ -64,11 +64,11 @@ const ITConsultingPage = () => {
               </Button>
             </Col>
             <Col lg={6} md={12} className="d-none d-lg-block">
-              <img 
+              {/* <img 
                 src="https://via.placeholder.com/600x400?text=IT+Consulting" 
                 alt="IT Consulting" 
                 className="img-fluid rounded shadow-lg"
-              />
+              /> */}
             </Col>
           </Row>
         </Container>
@@ -126,7 +126,7 @@ const ITConsultingPage = () => {
         <Container>
           <Row>
             <Col lg={12}>
-              <h2 className="section-title">Why Choose ByteCharge</h2>
+              <h2 className="section-title">Why Choose Hanu Tech</h2>
               <p>
                 Our consulting expertise sets us apart from other service providers. Our consultants bring decades of combined experience across diverse industries, ensuring that our recommendations are practical, forward-thinking, and tailored to your specific business context. We combine deep technical knowledge with strong business acumen to deliver solutions that address both immediate challenges and long-term objectives.
               </p>
@@ -162,7 +162,7 @@ const ITConsultingPage = () => {
           <div className="cta-content">
             <h2>Ready to Optimize Your IT Strategy?</h2>
             <p>
-              Partner with ByteCharge for expert IT consulting services that drive business growth and efficiency.
+              Partner with Hanu Tech for expert IT consulting services that drive business growth and efficiency.
             </p>
             <Button 
               as={Link} 
@@ -173,7 +173,7 @@ const ITConsultingPage = () => {
               Get Started
             </Button>
             <p className="footer-note mt-4">
-              Founded in 2018, ByteCharge provides innovative technology solutions to help businesses thrive in today's digital landscape.
+              Founded in 2018, Hanu Tech provides innovative technology solutions to help businesses thrive in today's digital landscape.
             </p>
           </div>
         </Container>

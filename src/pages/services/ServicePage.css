@@ -1,10 +1,11 @@
 .service-page {
-  color: var(--dark);
+  color: var(--text-on-dark);
   overflow-x: hidden;
+  background-color: var(--dark-bg);
 }
 
 .service-hero {
-  background: linear-gradient(135deg, rgba(94, 96, 206, 0.1) 0%, rgba(78, 168, 222, 0.1) 100%);
+  background: var(--dark-bg);
   padding: 120px 0 100px;
   position: relative;
   overflow: hidden;
@@ -26,7 +27,7 @@
   right: -100px;
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, rgba(78, 168, 222, 0.15) 0%, rgba(94, 96, 206, 0.05) 70%);
+  background: radial-gradient(circle, rgba(99, 101, 207, 0.1) 0%, transparent 70%);
 }
 
 .service-hero::after {
@@ -34,25 +35,29 @@
   left: -50px;
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle, rgba(94, 96, 206, 0.15) 0%, rgba(78, 168, 222, 0.05) 70%);
+  background: radial-gradient(circle, rgba(74, 156, 217, 0.1) 0%, transparent 70%);
 }
 
 .service-hero .display-4 {
   font-weight: 800;
   margin-bottom: 1.5rem;
-  background: linear-gradient(45deg, var(--primary), var(--primary-dark));
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: transparent;
   display: inline-block;
+  font-family: 'Outfit', sans-serif;
+  text-shadow: 0 0 10px rgba(99, 101, 207, 0.3);
 }
 
 .service-hero .lead {
   font-size: 1.35rem;
   margin-bottom: 2rem;
-  color: var(--gray-dark);
-  font-weight: 400;
+  color: var(--text-on-dark-muted);
+  font-weight: 300;
   max-width: 90%;
+  line-height: 1.7;
 }
 
 .service-hero-content {
@@ -63,6 +68,7 @@
 .service-description {
   padding: 80px 0;
   position: relative;
+  background-color: var(--dark-bg-lighter);
 }
 
 .service-description::after {
@@ -81,11 +87,12 @@
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 1.5rem;
-  color: var(--gray-dark);
+  color: var(--text-on-dark-muted);
+  font-weight: 300;
 }
 
 .service-benefits {
-  background-color: var(--light);
+  background-color: var(--dark-bg);
   padding: 80px 0;
   position: relative;
   overflow: hidden;
@@ -118,33 +125,37 @@
 }
 
 .benefit-card {
-  border: none;
-  border-radius: var(--border-radius-lg);
-  box-shadow: var(--box-shadow);
-  transition: var(--transition);
+  background-color: var(--dark-card-bg);
+  border-radius: var(--border-radius);
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   height: 100%;
-  background-color: white;
-  overflow: hidden;
+  transition: all 0.4s ease;
   position: relative;
+  overflow: hidden;
   z-index: 1;
 }
 
 .benefit-card::before {
-  content: "";
+  content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: linear-gradient(90deg, var(--primary), var(--accent));
-  z-index: 2;
+  inset: 0;
+  border-radius: var(--border-radius);
+  padding: 1px;
+  background: var(--gradient-primary);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
   opacity: 0;
-  transition: var(--transition);
+  transition: opacity 0.4s ease;
+  z-index: 0;
 }
 
 .benefit-card:hover {
   transform: translateY(-10px);
-  box-shadow: var(--box-shadow-hover);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2), var(--neon-primary-soft);
+  background-color: var(--dark-card-bg-hover);
 }
 
 .benefit-card:hover::before {
@@ -154,15 +165,22 @@
 .benefit-icon {
   width: 70px;
   height: 70px;
+  background: linear-gradient(135deg, rgba(99, 101, 207, 0.15) 0%, rgba(74, 156, 217, 0.15) 100%);
+  color: var(--primary-light);
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(94, 96, 206, 0.15) 0%, rgba(78, 168, 222, 0.15) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 24px;
-  transition: var(--transition);
-  position: relative;
-  z-index: 1;
+  font-size: 28px;
+  margin-bottom: 25px;
+  transition: all 0.4s ease;
+}
+
+.benefit-card:hover .benefit-icon {
+  background: var(--gradient-primary);
+  color: var(--text-on-dark);
+  transform: scale(1.05);
+  box-shadow: var(--neon-primary-soft);
 }
 
 .benefit-icon::after {
@@ -177,10 +195,6 @@
   z-index: -1;
   transition: var(--transition);
   opacity: 0;
-}
-
-.benefit-card:hover .benefit-icon {
-  transform: scale(1.1);
 }
 
 .benefit-card:hover .benefit-icon::after {
@@ -208,32 +222,31 @@
 }
 
 .section-title {
-  position: relative;
-  padding-bottom: 15px;
-  margin-bottom: 36px;
-  font-weight: 700;
-  color: var(--dark);
-  letter-spacing: -0.5px;
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--text-on-dark);
+  font-family: 'Outfit', sans-serif;
 }
 
 .section-title::after {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 60px;
   height: 4px;
   background: linear-gradient(90deg, var(--primary), var(--accent));
   border-radius: 2px;
 }
 
-.section-title.text-center::after {
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 .section-title span {
-  color: var(--primary);
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  text-shadow: 0 0 8px rgba(99, 101, 207, 0.3);
 }
 
 .why-choose {
@@ -424,6 +437,17 @@
 .cta-content .btn:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(94, 96, 206, 0.4);
+}
+
+.cta-content p {
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.footer-note {
+  font-style: italic;
+  color: #6c757d;
+  margin-top: 20px;
 }
 
 @media (max-width: 768px) {

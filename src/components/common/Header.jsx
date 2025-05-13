@@ -41,10 +41,10 @@ const Header = () => {
         <Navbar.Brand as={Link} to="/">
           <img 
             src="/bytecharge-logo.svg" 
-            alt="ByteCharge Logo" 
+            alt="Hanu Tech Logo" 
             className="logo"
             onError={(e) => {
-              e.target.src = 'https://via.placeholder.com/240x60?text=ByteCharge';
+              e.target.src = 'https://via.placeholder.com/240x60?text=Hanu+Tech';
             }}
           />
         </Navbar.Brand>

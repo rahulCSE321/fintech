@@ -204,7 +204,7 @@ const SoftwareDevelopmentPage = () => {
               </div>
             </Col>
             <Col lg={7} md={12}>
-              <h2 className="section-title">Why Choose <span>ByteCharge</span></h2>
+              <h2 className="section-title">Why Choose <span>Hanu Tech</span></h2>
               <p>
                 Our software development expertise sets us apart from other service providers. Our team consists of experienced developers, designers, architects, and quality assurance specialists who collaborate to deliver exceptional software solutions.
               </p>
@@ -267,7 +267,7 @@ const SoftwareDevelopmentPage = () => {
             <Badge className="modern-badge mb-3" bg="light" text="primary">Let's Build Together</Badge>
             <h2>Ready to Transform Your Software Vision into Reality?</h2>
             <p>
-              Partner with ByteCharge for custom software development services that address your unique business needs.
+              Partner with Hanu Tech for custom software development services that address your unique business needs.
             </p>
             <div className="mt-4">
               <Button 
@@ -291,7 +291,7 @@ const SoftwareDevelopmentPage = () => {
             </div>
             <div className="glass-effect mt-5 p-4 mx-auto" style={{ maxWidth: '500px', borderRadius: 'var(--border-radius)' }}>
               <p className="mb-0">
-                <small className="fw-bold">Founded in 2018,</small> ByteCharge provides innovative technology solutions to help businesses thrive in today's digital landscape.
+                <small className="fw-bold">Founded in 2018,</small> Hanu Tech provides innovative technology solutions to help businesses thrive in today's digital landscape.
               </p>
             </div>
           </div>

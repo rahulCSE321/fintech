@@ -34,7 +34,7 @@ const WhyChooseUsSection = () => {
     <section className="why-choose-section py-5">
       <Container>
         <div className="text-center mb-5">
-          <h2 className="section-title">Why Choose <span className="highlight">ByteCharge</span></h2>
+          <h2 className="section-title">Why Choose <span className="highlight">Hanu Tech</span></h2>
           <p className="section-subtitle">
             We deliver excellence in every aspect of our service, ensuring optimal results for your business.
           </p>
@@ -48,7 +48,7 @@ const WhyChooseUsSection = () => {
                   <div className="benefit-icon mb-3">
                     <i className={benefit.icon}></i>
                   </div>
-                  <Card.Title>{benefit.title}</Card.Title>
+                  <Card.Title className="text-on-dark">{benefit.title}</Card.Title>
                   <Card.Text>
                     {benefit.description}
                   </Card.Text>
@@ -60,7 +60,7 @@ const WhyChooseUsSection = () => {
         
         <div className="text-center mt-5">
           <p className="founded-text">
-            Founded in 2018, ByteCharge provides innovative technology solutions to help businesses thrive in today's digital landscape.
+            Founded in 2018, Hanu Tech provides innovative technology solutions to help businesses thrive in today's digital landscape.
           </p>
         </div>
       </Container>

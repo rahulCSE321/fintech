@@ -28,10 +28,10 @@ const RefundPolicyPage = () => {
                 <div className="refund-section mb-5">
                   <h2 className="mb-4">Refund Policy Overview</h2>
                   <p>
-                    At ByteCharge, we strive to ensure complete satisfaction with our services. This Refund and Cancellation Policy outlines the guidelines for requesting refunds and cancellations for various services offered by our company.
+                    At Hanu Tech, we strive to ensure complete satisfaction with our services. This Refund and Cancellation Policy outlines the guidelines for requesting refunds and cancellations for various services offered by our company.
                   </p>
                   <p>
-                    Please read this policy carefully to understand the refund and cancellation procedures for different types of services you may engage with ByteCharge.
+                    Please read this policy carefully to understand the refund and cancellation procedures for different types of services you may engage with Hanu Tech.
                   </p>
                 </div>
 
@@ -75,7 +75,7 @@ const RefundPolicyPage = () => {
                       <Accordion.Header>Bill Payments</Accordion.Header>
                       <Accordion.Body>
                         <p>
-                          Technology services provided by ByteCharge are typically non-refundable once engaged. However, refunds may be issued in the following cases:
+                          Technology services provided by Hanu Tech are typically non-refundable once engaged. However, refunds may be issued in the following cases:
                         </p>
                         <ul>
                           <li>If the bill payment transaction failed but your account was debited</li>
@@ -91,7 +91,7 @@ const RefundPolicyPage = () => {
                       <Accordion.Header>Flight Bookings</Accordion.Header>
                       <Accordion.Body>
                         <p>
-                          IT consulting services are subject to the cancellation and refund policies as outlined in the service agreement. ByteCharge serves as a service provider and adheres to the terms specified in the agreement.
+                          IT consulting services are subject to the cancellation and refund policies as outlined in the service agreement. Hanu Tech serves as a service provider and adheres to the terms specified in the agreement.
                         </p>
                         <p>
                           <strong>Cancellation Charges:</strong>
@@ -144,7 +144,7 @@ const RefundPolicyPage = () => {
                 <div className="refund-section mb-5">
                   <h2 className="mb-4">How to Request a Refund</h2>
                   <p>
-                    To request a refund for any service from ByteCharge, please follow these steps:
+                    To request a refund for any service from Hanu Tech, please follow these steps:
                   </p>
                   <ol className="refund-steps">
                     <li>
