@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { FaServer, FaMoneyBillWave, FaShieldAlt, FaBolt, FaBullseye } from 'react-icons/fa';
 import './ServicePage.css';
 
 const ITConsultingPage = () => {
@@ -9,31 +10,31 @@ const ITConsultingPage = () => {
       id: 1,
       title: 'Optimized IT Infrastructure',
       description: 'Streamline your technology infrastructure to improve efficiency, reduce costs, and enhance performance.',
-      icon: 'fas fa-server'
+      icon: <FaServer size={28} />
     },
     {
       id: 2,
       title: 'Reduced Operational Costs',
       description: 'Identify cost-saving opportunities through efficient technology utilization and process optimization.',
-      icon: 'fas fa-money-bill-wave'
+      icon: <FaMoneyBillWave size={28} />
     },
     {
       id: 3,
       title: 'Enhanced Security Posture',
       description: 'Strengthen your cybersecurity measures to protect your valuable data and critical business assets.',
-      icon: 'fas fa-shield-alt'
+      icon: <FaShieldAlt size={28} />
     },
     {
       id: 4,
       title: 'Improved Business Agility',
       description: 'Develop flexible technology solutions that can adapt quickly to changing business needs and market conditions.',
-      icon: 'fas fa-bolt'
+      icon: <FaBolt size={28} />
     },
     {
       id: 5,
       title: 'Strategic Technology Alignment',
       description: 'Ensure your IT investments are directly aligned with your business objectives and strategic goals.',
-      icon: 'fas fa-bullseye'
+      icon: <FaBullseye size={28} />
     }
   ];
 
@@ -107,7 +108,7 @@ const ITConsultingPage = () => {
                 <Card className="benefit-card">
                   <Card.Body>
                     <div className="benefit-icon">
-                      <i className={benefit.icon}></i>
+                      {benefit.icon}
                     </div>
                     <Card.Title className="h4 mb-3">{benefit.title}</Card.Title>
                     <Card.Text>

@@ -6,24 +6,24 @@ const ClientTestimonialsSection = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Amit Bansal',
-      position: 'CTO, TechSolutions Inc.',
-      content: 'HANU TECH transformed our IT infrastructure and dramatically improved our operational efficiency. Their expertise and professionalism were evident throughout the project.',
-      avatar: 'AB'
+      name: 'Ananya Patel',
+      position: 'CEO, Innovate Digital',
+      content: "Partnering with Hanu Tech has been transformative for our business. Their combined payment platform and IT services allowed us to consolidate vendors and streamline our operations significantly.",
+      avatar: 'AP'
     },
     {
       id: 2,
-      name: 'Sunita Rao',
-      position: 'Product Manager, InnovateNow',
-      content: 'The software development team at HANU TECH delivered an exceptional product that exceeded our expectations. Their attention to detail and commitment to quality is remarkable.',
-      avatar: 'SR'
+      name: 'Karan Mehra',
+      position: 'Director of Finance, GlobalTech',
+      content: "The integration capabilities of Hanu Tech's platform with our existing systems exceeded our expectations. Their technical team provided exceptional support throughout the implementation process.",
+      avatar: 'KM'
     },
     {
       id: 3,
-      name: 'Jai Prakash',
-      position: 'Head of Operations, GlobalRetail',
-      content: 'Working with HANU TECH for our technical support needs has been a game-changer. Their responsive team ensures our systems are always running optimally.',
-      avatar: 'JP'
+      name: 'Leela Krishnan',
+      position: 'CIO, Future Enterprises',
+      content: "Hanu Tech's dual expertise in payment solutions and IT services gives them a unique advantage. They understand both the financial and technical aspects of our business needs, delivering solutions that truly work.",
+      avatar: 'LK'
     }
   ];
 

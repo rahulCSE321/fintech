@@ -58,11 +58,11 @@ const AboutPage = () => {
               </p>
             </Col>
             <Col lg={6} md={12}>
-              <img 
+              {/* <img 
                 src="https://via.placeholder.com/600x400" 
                 alt="About Hanu Tech" 
                 className="img-fluid rounded shadow"
-              />
+              /> */}
             </Col>
           </Row>
         </Container>
@@ -150,17 +150,20 @@ const AboutPage = () => {
       </section>
 
       {/* Our Team */}
-      <section className="our-team py-5" style={{ backgroundColor: '#ffffff' }}>
+      <section className="our-team py-5">
         <Container>
-          <h2 className="text-center mb-5" style={{ color: '#000000', fontWeight: 'bold' }}>Our Leadership Team</h2>
+          <div className="text-center mb-5">
+            <Badge className="modern-badge mb-3" bg="light" text="primary">Meet Our Team</Badge>
+            <h2 className="section-title">Our <span className="gradient-text">Leadership Team</span></h2>
+          </div>
           <Row>
             {teamMembers.map(member => (
               <Col key={member.id} lg={3} md={6} className="mb-4">
-                <Card className="team-card h-100 leadership-card">
+                <Card className="leadership-card">
                   <Card.Body className="p-4">
-                    <Card.Title className="mb-2" style={{ color: '#000000', fontWeight: 'bold', fontSize: '1.3rem' }}>{member.name}</Card.Title>
-                    <Card.Subtitle className="mb-3" style={{ color: '#000000', fontWeight: '600' }}>{member.position}</Card.Subtitle>
-                    <Card.Text style={{ color: '#000000', fontWeight: '500' }}>{member.bio}</Card.Text>
+                    <Card.Title className="mb-2" style={{ fontWeight: 'bold', fontSize: '1.4rem', color: '#0063f7' }}>{member.name}</Card.Title>
+                    <Card.Subtitle className="mb-3" style={{ fontWeight: '600', color: '#5e60ce' }}>{member.position}</Card.Subtitle>
+                    <Card.Text style={{ color: '#555', fontWeight: '400', lineHeight: '1.6' }}>{member.bio}</Card.Text>
                   </Card.Body>
                 </Card>
               </Col>
@@ -253,36 +256,36 @@ const AboutPage = () => {
                 <div className="timeline-item">
                   <div className="timeline-dot"></div>
                   <div className="timeline-content">
-                    <h4>2018</h4>
-                    <p>Hanu Tech was founded in Bangalore, India</p>
+                    <h4 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#0063f7' }}>2018</h4>
+                    <p style={{ color: '#333', fontWeight: '500' }}>Hanu Tech was founded in Bangalore, India</p>
                   </div>
                 </div>
                 <div className="timeline-item">
                   <div className="timeline-dot"></div>
                   <div className="timeline-content">
-                    <h4>2019</h4>
-                    <p>Expanded service offerings to include IT Consulting and BPO services</p>
+                    <h4 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#0063f7' }}>2019</h4>
+                    <p style={{ color: '#333', fontWeight: '500' }}>Expanded service offerings to include IT Consulting and BPO services</p>
                   </div>
                 </div>
                 <div className="timeline-item">
                   <div className="timeline-dot"></div>
                   <div className="timeline-content">
-                    <h4>2020</h4>
-                    <p>Introduced Technical Support and Software Development services</p>
+                    <h4 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#0063f7' }}>2020</h4>
+                    <p style={{ color: '#333', fontWeight: '500' }}>Introduced Technical Support and Software Development services</p>
                   </div>
                 </div>
                 <div className="timeline-item">
                   <div className="timeline-dot"></div>
                   <div className="timeline-content">
-                    <h4>2021</h4>
-                    <p>Added IT Staffing to our service portfolio and reached 100+ clients</p>
+                    <h4 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#0063f7' }}>2021</h4>
+                    <p style={{ color: '#333', fontWeight: '500' }}>Added IT Staffing to our service portfolio and reached 100+ clients</p>
                   </div>
                 </div>
                 <div className="timeline-item">
                   <div className="timeline-dot"></div>
                   <div className="timeline-content">
-                    <h4>2022</h4>
-                    <p>Hanu Tech celebrates delivering 200+ successful projects</p>
+                    <h4 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#0063f7' }}>2022</h4>
+                    <p style={{ color: '#333', fontWeight: '500' }}>Hanu Tech celebrates delivering 200+ successful projects</p>
                   </div>
                 </div>
               </div>

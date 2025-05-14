@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { FaMoneyBillWave, FaBullseye, FaCogs, FaUserTie, FaExpandArrowsAlt } from 'react-icons/fa';
 import './ServicePage.css';
 
 const BPOPage = () => {
@@ -9,31 +10,31 @@ const BPOPage = () => {
       id: 1,
       title: 'Reduced Operational Costs',
       description: 'Lower your overhead expenses by outsourcing functions that would otherwise require significant investment in staff, training, and infrastructure.',
-      icon: 'fas fa-money-bill-wave'
+      icon: <FaMoneyBillWave size={28} />
     },
     {
       id: 2,
       title: 'Increased Focus on Core Business',
       description: 'Free up valuable time and resources to concentrate on strategic initiatives and core business functions that drive growth and revenue.',
-      icon: 'fas fa-bullseye'
+      icon: <FaBullseye size={28} />
     },
     {
       id: 3,
       title: 'Improved Process Efficiency',
       description: 'Benefit from specialized expertise and best practices that enhance process performance and workflow optimization.',
-      icon: 'fas fa-cogs'
+      icon: <FaCogs size={28} />
     },
     {
       id: 4,
       title: 'Access to Specialized Skills',
       description: 'Tap into a pool of skilled professionals with specific domain expertise without the challenges of recruitment and training.',
-      icon: 'fas fa-user-tie'
+      icon: <FaUserTie size={28} />
     },
     {
       id: 5,
       title: 'Scalable Resource Management',
       description: 'Easily scale your operations up or down based on business needs without concerns about hiring or layoffs.',
-      icon: 'fas fa-expand-arrows-alt'
+      icon: <FaExpandArrowsAlt size={28} />
     }
   ];
 
@@ -64,11 +65,11 @@ const BPOPage = () => {
               </Button>
             </Col>
             <Col lg={6} md={12} className="d-none d-lg-block">
-              <img 
+              {/* <img 
                 src="https://via.placeholder.com/600x400?text=Business+Process+Outsourcing" 
                 alt="Business Process Outsourcing" 
                 className="img-fluid rounded shadow-lg"
-              />
+              /> */}
             </Col>
           </Row>
         </Container>
@@ -107,7 +108,7 @@ const BPOPage = () => {
                 <Card className="benefit-card">
                   <Card.Body>
                     <div className="benefit-icon">
-                      <i className={benefit.icon}></i>
+                      {benefit.icon}
                     </div>
                     <Card.Title className="h4 mb-3">{benefit.title}</Card.Title>
                     <Card.Text>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { FaUsers, FaClock, FaCheckCircle, FaSlidersH, FaHandshake } from 'react-icons/fa';
 import './ServicePage.css';
 
 const ITStaffingPage = () => {
@@ -9,31 +10,31 @@ const ITStaffingPage = () => {
       id: 1,
       title: 'Access to Pre-Vetted Talent Pool',
       description: 'Quickly connect with qualified candidates who have been thoroughly screened and evaluated for technical skills and cultural fit.',
-      icon: 'fas fa-users'
+      icon: <FaUsers size={28} />
     },
     {
       id: 2,
       title: 'Reduced Hiring Timeframes',
       description: 'Accelerate your recruitment process and fill critical positions faster with our efficient sourcing and screening methodologies.',
-      icon: 'fas fa-clock'
+      icon: <FaClock size={28} />
     },
     {
       id: 3,
       title: 'Specialized Technical Screening',
       description: 'Benefit from our expertise in evaluating technical skills across various domains and technology stacks.',
-      icon: 'fas fa-check-circle'
+      icon: <FaCheckCircle size={28} />
     },
     {
       id: 4,
       title: 'Flexible Staffing Options',
       description: 'Choose from temporary, contract-to-hire, or direct placement options based on your specific business needs.',
-      icon: 'fas fa-sliders-h'
+      icon: <FaSlidersH size={28} />
     },
     {
       id: 5,
       title: 'Retention-Focused Placement',
       description: 'Our emphasis on cultural and technical fit leads to higher job satisfaction and longer-term retention of placed candidates.',
-      icon: 'fas fa-handshake'
+      icon: <FaHandshake size={28} />
     }
   ];
 
@@ -64,11 +65,11 @@ const ITStaffingPage = () => {
               </Button>
             </Col>
             <Col lg={6} md={12} className="d-none d-lg-block">
-              <img 
+              {/* <img 
                 src="https://via.placeholder.com/600x400?text=IT+Staffing" 
                 alt="IT Staffing" 
                 className="img-fluid rounded shadow-lg"
-              />
+              /> */}
             </Col>
           </Row>
         </Container>
@@ -107,7 +108,7 @@ const ITStaffingPage = () => {
                 <Card className="benefit-card">
                   <Card.Body>
                     <div className="benefit-icon">
-                      <i className={benefit.icon}></i>
+                      {benefit.icon}
                     </div>
                     <Card.Title className="h4 mb-3">{benefit.title}</Card.Title>
                     <Card.Text>

@@ -68,8 +68,8 @@ const Header = () => {
               className={location.pathname.includes('/services') ? 'active' : ''}
             >
               {/* Payment Services */}
-              <NavDropdown.Item as={Link} to="/services">All Services</NavDropdown.Item>
-              <NavDropdown.Divider />
+              {/* <NavDropdown.Item as={Link} to="/services">All Services</NavDropdown.Item>
+              <NavDropdown.Divider /> */}
               
               {/* IT Services */}
               <NavDropdown.Header>IT Services</NavDropdown.Header>
@@ -123,6 +123,14 @@ const Header = () => {
               className={location.pathname === '/contact' ? 'active' : ''}
             >
               Contact
+            </Nav.Link>
+            
+            <Nav.Link 
+              as={Link} 
+              to="/blog" 
+              className={location.pathname === '/blog' ? 'active' : ''}
+            >
+              Blog
             </Nav.Link>
             <Button 
               variant="outline-primary" 

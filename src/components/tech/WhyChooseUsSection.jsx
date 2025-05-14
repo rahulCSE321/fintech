@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import { FaCoins, FaChartLine, FaClock, FaTools, FaCheckCircle } from 'react-icons/fa';
 import './WhyChooseUsSection.css';
 
 const WhyChooseUsSection = () => {
@@ -8,25 +9,25 @@ const WhyChooseUsSection = () => {
       id: 1,
       title: 'Cost-Effective',
       description: 'Our solutions focus on maximizing ROI by optimizing resource utilization.',
-      icon: 'fas fa-coins'
+      icon: <FaCoins size={40} />
     },
     {
       id: 2,
       title: 'Scalable',
       description: 'Our infrastructure and solutions grow seamlessly with your business needs.',
-      icon: 'fas fa-chart-line'
+      icon: <FaChartLine size={40} />
     },
     {
       id: 3,
       title: 'Time-Saving',
       description: 'We streamline processes to reduce time-to-market and operational overhead.',
-      icon: 'fas fa-clock'
+      icon: <FaClock size={40} />
     },
     {
       id: 4,
       title: 'Customizable',
       description: 'Our solutions are tailored to address your specific business requirements.',
-      icon: 'fas fa-tools'
+      icon: <FaTools size={40} />
     }
   ];
 
@@ -46,7 +47,7 @@ const WhyChooseUsSection = () => {
               <Card className="benefit-card text-center h-100">
                 <Card.Body>
                   <div className="benefit-icon mb-3">
-                    <i className={benefit.icon}></i>
+                    {benefit.icon}
                   </div>
                   <Card.Title className="text-on-dark">{benefit.title}</Card.Title>
                   <Card.Text>

@@ -44,7 +44,7 @@ const TechServicesSection = () => {
   ];
 
   return (
-    <section className="tech-services-section py-5">
+    <section id="tech-services" className="tech-services-section py-5">
       <Container>
         <div className="text-center mb-5">
           <h2 className="section-title">Our <span className="highlight">Tech Services</span></h2>

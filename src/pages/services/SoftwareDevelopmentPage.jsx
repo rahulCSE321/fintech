@@ -68,12 +68,12 @@ const SoftwareDevelopmentPage = () => {
             <Col lg={6} md={12} className="d-none d-lg-block">
               <div className="position-relative animate-fadeIn">
                 <div className="position-absolute" style={{ top: '-15px', right: '-15px', width: '150px', height: '150px', background: 'radial-gradient(circle, rgba(94, 96, 206, 0.1) 0%, rgba(94, 96, 206, 0.05) 70%)', borderRadius: '50%', zIndex: '0' }}></div>
-                <img 
+                {/* <img 
                   src="https://via.placeholder.com/600x400?text=Software+Development" 
                   alt="Software Development" 
                   className="img-fluid rounded-lg shadow-lg position-relative"
                   style={{ borderRadius: 'var(--border-radius-lg)', zIndex: '1' }}
-                />
+                /> */}
                 <div className="position-absolute" style={{ bottom: '-20px', left: '-20px', width: '100px', height: '100px', background: 'radial-gradient(circle, rgba(78, 168, 222, 0.15) 0%, rgba(78, 168, 222, 0.05) 70%)', borderRadius: '50%', zIndex: '0' }}></div>
               </div>
             </Col>
@@ -182,7 +182,7 @@ const SoftwareDevelopmentPage = () => {
       </section>
 
       {/* Why Choose Section */}
-      <section className="why-choose section-padding">
+      {/* <section className="why-choose section-padding">
         <Container>
           <Row className="align-items-center">
             <Col lg={5} md={12}>
@@ -243,7 +243,7 @@ const SoftwareDevelopmentPage = () => {
             </Col>
           </Row>
         </Container>
-      </section>
+      </section> */}
 
       {/* Industries Served */}
       <section className="industries">
@@ -261,7 +261,7 @@ const SoftwareDevelopmentPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="cta-section">
+      {/* <section className="cta-section">
         <Container>
           <div className="cta-content">
             <Badge className="modern-badge mb-3" bg="light" text="primary">Let's Build Together</Badge>
@@ -296,7 +296,7 @@ const SoftwareDevelopmentPage = () => {
             </div>
           </div>
         </Container>
-      </section>
+      </section> */}
     </div>
   );
 };

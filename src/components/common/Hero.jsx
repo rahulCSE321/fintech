@@ -4,6 +4,13 @@ import { Link } from 'react-router-dom';
 import './Hero.css';
 
 const Hero = () => {
+  const scrollToTechServices = () => {
+    const techServicesSection = document.getElementById('tech-services');
+    if (techServicesSection) {
+      techServicesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="hero-section">
       <Container>
@@ -16,7 +23,7 @@ const Hero = () => {
             <div className="d-flex flex-wrap gap-3">
               <Button 
                 as={Link} 
-                to="/register" 
+                to="/contact" 
                 variant="primary" 
                 size="lg"
                 className="main-btn"
@@ -24,10 +31,9 @@ const Hero = () => {
                 Get Started
               </Button>
               <Button 
-                as={Link} 
-                to="/services" 
                 variant="outline-primary" 
                 size="lg"
+                onClick={scrollToTechServices}
               >
                 Explore Services
               </Button>

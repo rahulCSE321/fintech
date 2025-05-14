@@ -11,47 +11,47 @@ const ServicesSection = () => {
       icon: <FaMobileAlt />,
       title: 'Mobile Recharge',
       description: 'Recharge prepaid mobile phones across all major networks quickly and securely.',
-      link: '/services/recharge'
+      link: '/blog'
     },
     {
       id: 2,
       icon: <FaFileInvoiceDollar />,
       title: 'Bill Payments',
       description: 'Pay electricity, water, gas, broadband and other utility bills hassle-free.',
-      link: '/services/bill-payments'
+      link: '/blog'
     },
     {
       id: 3,
       icon: <FaPlane />,
       title: 'Flight Bookings',
       description: 'Book domestic and international flights at the best prices with exclusive deals.',
-      link: '/services/flights'
+      link: '/blog'
     },
     {
       id: 4,
       icon: <FaTicketAlt />,
       title: 'Movie Tickets',
       description: 'Book movie tickets for the latest releases at theaters near you.',
-      link: '/services/movies'
+      link: '/blog'
     },
     {
       id: 5,
       icon: <FaCreditCard />,
       title: 'Credit Card Payments',
       description: 'Pay your credit card bills for all major banks securely and on time.',
-      link: '/services/credit-card'
+      link: '/blog'
     },
     {
       id: 6,
       icon: <FaUniversity />,
       title: 'Savings Account',
       description: 'Open a digital savings account with attractive interest rates and zero paperwork.',
-      link: '/services/savings-account'
+      link: '/blog'
     }
   ];
 
   return (
-    <section className="services-section py-5">
+    <section id="services" className="services-section py-5">
       <Container>
         <div className="text-center mb-5">
           <h2 className="section-title">Our <span className="highlight">Services</span></h2>

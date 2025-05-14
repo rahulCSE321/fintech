@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { scrollToElement } from '../../utils/scrollUtils';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import './Footer.css';
 
@@ -35,16 +36,16 @@ const Footer = () => {
             <h5 className="text-uppercase mb-4">Services</h5>
             <ul className="list-unstyled mb-0">
               <li className="mb-2">
-                <Link to="/services/recharge" className="text-white">Mobile Recharge</Link>
+                <a href="#" onClick={(e) => { e.preventDefault(); scrollToElement('services'); }} className="text-white">Mobile Recharge</a>
               </li>
               <li className="mb-2">
-                <Link to="/services/bill-payments" className="text-white">Bill Payments</Link>
+                <a href="#" onClick={(e) => { e.preventDefault(); scrollToElement('services'); }} className="text-white">Bill Payments</a>
               </li>
               <li className="mb-2">
-                <Link to="/services/flights" className="text-white">Flight Booking</Link>
+                <a href="#" onClick={(e) => { e.preventDefault(); scrollToElement('services'); }} className="text-white">Flight Booking</a>
               </li>
               <li className="mb-2">
-                <Link to="/services/movies" className="text-white">Movie Tickets</Link>
+                <a href="#" onClick={(e) => { e.preventDefault(); scrollToElement('services'); }} className="text-white">Movie Tickets</a>
               </li>
             </ul>
           </Col>
@@ -58,12 +59,12 @@ const Footer = () => {
               <li className="mb-2">
                 <Link to="/contact" className="text-white">Contact Us</Link>
               </li>
-              <li className="mb-2">
+              {/* <li className="mb-2">
                 <Link to="/careers" className="text-white">Careers</Link>
               </li>
               <li className="mb-2">
                 <Link to="/blog" className="text-white">Blog</Link>
-              </li>
+              </li> */}
             </ul>
           </Col>
           

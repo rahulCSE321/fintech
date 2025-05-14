@@ -98,8 +98,7 @@
   transition: all 0.4s ease;
 }
 
-.benefit-icon i {
-  font-size: 28px;
+.benefit-icon svg {
   color: var(--primary-light);
   transition: all 0.3s ease;
 }
@@ -110,7 +109,7 @@
   box-shadow: var(--neon-primary-soft);
 }
 
-.benefit-card:hover .benefit-icon i {
+.benefit-card:hover .benefit-icon svg {
   color: var(--text-on-dark);
 }
 

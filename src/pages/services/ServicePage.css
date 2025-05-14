@@ -171,9 +171,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 28px;
   margin-bottom: 25px;
   transition: all 0.4s ease;
+}
+
+.benefit-icon svg {
+  color: var(--primary-light);
+  transition: all 0.3s ease;
 }
 
 .benefit-card:hover .benefit-icon {
@@ -181,6 +185,10 @@
   color: var(--text-on-dark);
   transform: scale(1.05);
   box-shadow: var(--neon-primary-soft);
+}
+
+.benefit-card:hover .benefit-icon svg {
+  color: var(--text-on-dark);
 }
 
 .benefit-icon::after {

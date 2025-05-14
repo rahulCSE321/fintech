@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { FaClock, FaBolt, FaShieldAlt, FaFileAlt, FaHeadset } from 'react-icons/fa';
 import './ServicePage.css';
 
 const TechnicalSupportPage = () => {
@@ -9,31 +10,31 @@ const TechnicalSupportPage = () => {
       id: 1,
       title: '24/7 System Availability',
       description: 'Round-the-clock support ensures your critical systems remain operational at all times, minimizing business disruption.',
-      icon: 'fas fa-clock'
+      icon: <FaClock size={28} />
     },
     {
       id: 2,
       title: 'Rapid Issue Resolution',
       description: 'Quick response times and efficient problem-solving processes minimize downtime and restore normal operations promptly.',
-      icon: 'fas fa-bolt'
+      icon: <FaBolt size={28} />
     },
     {
       id: 3,
       title: 'Preventive Maintenance',
       description: 'Proactive system monitoring and regular maintenance prevent issues before they impact your business operations.',
-      icon: 'fas fa-shield-alt'
+      icon: <FaShieldAlt size={28} />
     },
     {
       id: 4,
       title: 'Comprehensive Documentation',
       description: 'Detailed records of all support activities and solutions for future reference and knowledge management.',
-      icon: 'fas fa-file-alt'
+      icon: <FaFileAlt size={28} />
     },
     {
       id: 5,
       title: 'Multi-Channel Support Options',
       description: 'Access to support through various channels including phone, email, chat, and remote assistance for your convenience.',
-      icon: 'fas fa-headset'
+      icon: <FaHeadset size={28} />
     }
   ];
 
@@ -64,11 +65,11 @@ const TechnicalSupportPage = () => {
               </Button>
             </Col>
             <Col lg={6} md={12} className="d-none d-lg-block">
-              <img 
+              {/* <img 
                 src="https://via.placeholder.com/600x400?text=Technical+Support" 
                 alt="Technical Support" 
                 className="img-fluid rounded shadow-lg"
-              />
+              /> */}
             </Col>
           </Row>
         </Container>
@@ -107,7 +108,7 @@ const TechnicalSupportPage = () => {
                 <Card className="benefit-card">
                   <Card.Body>
                     <div className="benefit-icon">
-                      <i className={benefit.icon}></i>
+                      {benefit.icon}
                     </div>
                     <Card.Title className="h4 mb-3">{benefit.title}</Card.Title>
                     <Card.Text>
