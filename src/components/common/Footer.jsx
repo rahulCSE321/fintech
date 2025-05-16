@@ -11,7 +11,7 @@ const Footer = () => {
       <Container>
         <Row className="mb-4">
           <Col md={4} className="mb-4 mb-md-0">
-            <h5 className="text-uppercase mb-4">Halo tech</h5>
+            <h5 className="text-uppercase mb-4">Hanu Tech</h5>
             <p>
               Your one-stop solution for all payment needs. Recharge, pay bills,
               book flights, movie tickets, and more with ease and convenience.
@@ -70,10 +70,10 @@ const Footer = () => {
           
           <Col md={4}>
             <h5 className="text-uppercase mb-4">Contact Us</h5>
-            <p><i className="fas fa-home me-3"></i> New York, NY 10012, US</p>
-            <p><i className="fas fa-envelope me-3"></i> info@pay999.com</p>
-            <p><i className="fas fa-phone me-3"></i> + 01 234 567 88</p>
-            <p><i className="fas fa-print me-3"></i> + 01 234 567 89</p>
+            <p><i className="fas fa-home me-3"></i> Dhanbad, Jharkhand, India</p>
+            <p><i className="fas fa-envelope me-3"></i> Support@hanutech.io            </p>
+            <p><i className="fas fa-phone me-3"></i> +91 9472733238</p>
+            {/* <p><i className="fas fa-print me-3"></i> + 01 234 567 89</p> */}
           </Col>
         </Row>
         
@@ -82,7 +82,7 @@ const Footer = () => {
         <Row className="align-items-center">
           <Col md={8} lg={8}>
             <p className="small text-md-left">
-              © {new Date().getFullYear()} Copyright: <strong>Halo Tech</strong>. All rights reserved.
+              © {new Date().getFullYear()} Copyright: <strong>Hanu Tech</strong>. All rights reserved.
             </p>
           </Col>
           <Col md={4} lg={4} className="ml-lg-0 text-md-right">

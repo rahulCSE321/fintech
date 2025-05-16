@@ -41,14 +41,14 @@ const Hero = () => {
           </Col>
           <Col lg={6} md={12} className="mt-5 mt-lg-0 d-flex justify-content-center">
             <div className="hero-image-container">
-              <img 
+              {/* <img 
                 src="/hero-image.png" 
                 alt="Financial Services" 
                 className="hero-image img-fluid"
                 onError={(e) => {
                   e.target.src = 'https://via.placeholder.com/600x500?text=Pay999+App';
                 }}
-              />
+              /> */}
             </div>
           </Col>
         </Row>
