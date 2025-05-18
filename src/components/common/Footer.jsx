@@ -82,7 +82,7 @@ const Footer = () => {
         <Row className="align-items-center">
           <Col md={8} lg={8}>
             <p className="small text-md-left">
-              © {new Date().getFullYear()} Copyright: <strong>Hanu Tech</strong>. All rights reserved.
+              © {new Date().getFullYear()} Copyright: <strong>HANU TECH SOLUTION PRIVATE LIMITED</strong>. All rights reserved.
             </p>
           </Col>
           <Col md={4} lg={4} className="ml-lg-0 text-md-right">
